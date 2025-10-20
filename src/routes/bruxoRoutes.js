@@ -7,4 +7,8 @@ const router = Router();
 router.get("/", BruxoController.listarTodos);
 
 
+// Rota do GetById
+router.get("/:id", BruxoController.listarUm)
+
+
 export default router;
