@@ -8,16 +8,16 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model Pet {
-
-  id      Int      @id @default(autoincrement())
-  nome    String
-  especie String
-  Idade   Int
-  dono    String
+model Bruxo {
+  id           Int      @id @default(autoincrement())
+  nome         String
+  casa         String
+  patrono      String?
+  varinha      String
+  anoMatricula Int
+  ativo        Boolean  @default(true)
   createdAt    DateTime @default(now())
   updatedAt    DateTime @updatedAt
 
- @@map ( " pets ")
-
+  @@map(" bruxos")
 }
