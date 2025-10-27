@@ -9,6 +9,9 @@ router.get("/", BruxoController.listarTodos);
 
 // Rota do GetById
 router.get("/:id", BruxoController.listarUm)
+router.post("/", BruxoController.criar)
+router.delete("/:id", BruxoController.apagar)
+router.put("/:id", BruxoController.atualizar)
 
 
 export default router;
